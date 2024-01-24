@@ -14,6 +14,7 @@ export async function getStaticProps(context) {
     return {
         props: {
             locale: context.locale,
-        }
+        },
+        revalidate: 10
     }
 }
